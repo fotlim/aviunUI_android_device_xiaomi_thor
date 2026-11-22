@@ -1,0 +1,13 @@
+# Xiaomi
+ro.product.mod_device=thor
+
+# [fish] cameraserver 变焦范围放宽到 0.5~120（配合小米相机）
+persist.fish.camera.widezoom=1
+
+# [ROM-INTEGRATION] MIUI 相机所需最小属性（来自 integration properties.example）
+ro.miui.notch=1
+ro.miui.ui.version.code=816
+ro.miui.ui.version.name=V816
+
+# 兜底：privapp 白名单万一遗漏，也不让开机因 PMS 校验失败卡死（仅记日志）
+ro.control_privapp_permissions=log

@@ -1,0 +1,19 @@
+// 杜比 DMS HIDL 服务（从官方 vendor 提取的预编译二进制）
+// 用 cc_prebuilt_binary 是为了能带 vintf_fragments + init_rc，
+// 这两者都不允许通过 PRODUCT_COPY_FILES 安装。
+cc_prebuilt_binary {
+    name: "dolby_dms_service",
+    owner: "fotlim",
+    stem: "vendor.dolby.hardware.dms@2.0-service",
+    vendor: true,
+    relative_install_path: "hw",
+    srcs: ["bin/vendor.dolby.hardware.dms@2.0-service"],
+    compile_multilib: "64",
+    vintf_fragments: ["etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml"],
+    init_rc: ["etc/init/vendor.dolby.hardware.dms@2.0-service.rc"],
+    strip: {
+        none: true,
+    },
+    // 官方预编译二进制，DT_NEEDED 里有若干 vendor 私有库名，跳过 ELF 依赖校验
+    check_elf_files: false,
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  杜比 DMS HIDL HAL 的框架兼容矩阵片段。
+  DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE 里的文件必须是 type="framework"，
+  用于声明设备专有 HAL（不在 AOSP 官方框架兼容矩阵里）。
+-->
+<compatibility-matrix version="1.0" type="framework">
+    <hal format="hidl">
+        <name>vendor.dolby.hardware.dms</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

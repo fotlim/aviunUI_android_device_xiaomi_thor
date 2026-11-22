@@ -1,0 +1,27 @@
+//
+// MIUI Gallery + MediaEditor prebuilt for thor — presigned (Xiaomi), shipped as product apps.
+// 依赖 miui_compat 的 com.miui.system.jar(uses-library) + framework 里的 miui 兼容类。
+//
+android_app_import {
+    name: "MiuiGallery",
+    owner: "avium",
+    apk: "MiuiGallery.apk",
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MiuiMediaEditor",
+    owner: "avium",
+    apk: "MiuiMediaEditor.apk",
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.miui.rom" file="/system/framework/com.miui.rom.jar" />
+    <library name="com.miui.system" file="/system/framework/com.miui.system.jar" />
+    <library name="micloud-sdk" file="/system/framework/micloud-sdk.jar" />
+    <library name="miui-cameraopt" file="/system/framework/miui-cameraopt.jar" />
+</permissions>

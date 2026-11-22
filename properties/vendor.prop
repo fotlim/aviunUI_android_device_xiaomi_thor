@@ -1,0 +1,11 @@
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=720|2480|134
+persist.vendor.sys.fp.fod.location.X_Y=586,2346
+persist.vendor.sys.fp.fod.size.width_height=267,267
+
+# Sensors
+ro.vendor.sensors.notifier.light_sensors.primary=5
+
+# MIUI 相机：把 com.android.camera 纳入特权相机应用名单（如有既有值需用逗号追加）
+persist.vendor.camera.privapp.list=com.android.camera

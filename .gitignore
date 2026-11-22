@@ -1,0 +1,26 @@
+# ============================================================
+# AviumUI thor device tree
+# 大型专有二进制 / 构建备份 —— 不进 device tree 源码仓库
+# （这些文件应从 vendor 仓或 extract-files 单独获取）
+# ============================================================
+
+# 大 APK / 原生库 / 镜像 / 压缩包 / 模型
+*.apk
+*.so
+*.img
+*.zip
+*.tflite
+*.odex
+*.vdex
+*.oat
+
+# 手工备份（device.mk.bak_xxx、config.xml.bak_xxx、*.bak2 …）
+*.bak
+*.bak2
+*.bak_*
+_backups/
+
+# 构建日志 / 临时
+*.log
+*.orig
+*.rej
